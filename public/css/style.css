@@ -1,0 +1,185 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #eaebfe; /* Lightest color for the background */
+    color: #505a74; /* Neutral text color */
+}
+
+.container {
+    flex: 1;
+}
+
+/* Navbar */
+.navbar {
+    height: 5rem;
+    background-color: #022954; /* Dark blue for the navbar */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: #eaebfe !important; /* Lightest color for links */
+    font-weight: 500;
+    margin-right: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #b0b8ce !important; /* Soft hover effect */
+}
+
+.fa-globe {
+    color: #b0b8ce; /* Accent color for icons */
+}
+
+/* Footer */
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #022954; /* Dark background */
+    color: #eaebfe; /* Light text */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #b0b8ce; /* Soft blue for links */
+    font-weight: 500;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.f-info-links a:hover {
+    color: #eaebfe; /* Lighter hover effect */
+}
+
+.f-info-socials i {
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    color: #b0b8ce;
+    transition: color 0.3s ease;
+}
+
+.f-info-socials i:hover {
+    color: #eaebfe;
+}
+
+/* Cards */
+.card {
+    border: none !important;
+    margin-bottom: 2rem;
+    background-color: #ffffff; /* White for card background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    height: 15rem;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 1rem !important;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #354c7c; /* Stronger blue for headings */
+}
+
+.card-text {
+    color: #505a74; /* Neutral color for text */
+    margin-top: 0.5rem;
+}
+
+.listing-link {
+    text-decoration: none;
+    color: #022954; /* Dark blue for links */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.listing-link:hover {
+    color: #354c7c; /* Slightly lighter hover effect */
+}
+
+/* Card Overlay Effect */
+.card-img-overlay {
+    opacity: 0;
+    border-radius: 1rem;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: #b0b8ce; /* Subtle overlay color */
+}
+
+/* Buttons */
+.add-btn, .edit-btn, .btn {
+    background-color: #022954 !important;
+    color: #eaebfe !important;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-btn:hover, .edit-btn:hover, .btn:hover {
+    background-color: #354c7c !important; /* Lighter shade for hover */
+    transform: scale(1.05);
+}
+
+/* Show Page */
+.show-img {
+    height: 30vh;
+    border-radius: 1rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.btns {
+    display: flex;
+    gap: 1rem;
+}
+
+/* General Typography */
+h1, h2, h3 {
+    color: #022954; /* Dark blue for headings */
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p, span {
+    color: #505a74;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: #022954;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #354c7c;
+    text-decoration: underline;
+}
