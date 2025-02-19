@@ -27,6 +27,12 @@ const userRouter = require("./routes/user.js");
 
 const dbUrl = process.env.ATLASDB_URL;
 
+app.use((req, res, next) => {
+  res.locals.currUser = req.user || null;  // Pass currUser globally
+  next();
+});
+
+
 // Database Connection
 main()
   .then(() => {
@@ -39,6 +45,11 @@ main()
 async function main() {
   await mongoose.connect(dbUrl);
 }
+
+app.get("/", (req, res) => {
+  res.render("home"); // This will load views/home.ejs
+});
+
 
 // Set View Engine
 app.set("view engine", "ejs");

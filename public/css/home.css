@@ -1,0 +1,75 @@
+/* General Styling */
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #022954; /* Lightest theme color */
+    color: #505a74;
+}
+
+/* Home Container */
+.home-container {
+    text-align: center;
+    max-width: 600px;
+    padding: 3rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.home-container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #022954;
+    margin-bottom: 1rem;
+}
+
+.home-container p {
+    font-size: 1.2rem;
+    color: #505a74;
+    margin-bottom: 2rem;
+}
+
+/* Button Container */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Colors */
+.explore {
+    background-color: #022954;
+    color: #eaebfe;
+}
+
+.signup {
+    background-color: #354c7c;
+    color: #eaebfe;
+}
+
+.login {
+    background-color: #b0b8ce;
+    color: #022954;
+}
+
+/* Hover Effects */
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
