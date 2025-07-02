@@ -35,6 +35,8 @@ Create, explore, and review vacation listings with full-stack power and a sleek 
 ---
 
 ## 📁 Project Structure
+
+```bash
 StaySphere/
 ├── app.js                  # Main Express app setup
 ├── cloudConfig.js          # Cloudinary configuration
@@ -80,16 +82,17 @@ StaySphere/
 └── README.md               # Project documentation
 
 
----
 
-## 🔧 Setup Instructions
 
-### 1️⃣ Clone the repository
+🔧 Setup Instructions
 
+1️⃣ Clone the repository
+
+```bash
 git clone https://github.com/your-username/staysphere.git
 cd staysphere
 
-### 2️⃣ Install dependencies
+2️⃣ Install dependencies
 
 npm install
 
