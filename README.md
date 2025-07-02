@@ -81,45 +81,52 @@ StaySphere/
 │
 └── README.md               # Project documentation
 
+```
 
 
+## 🔧 Setup Instructions
 
-🔧 Setup Instructions
-
-1️⃣ Clone the repository
+### 1️⃣ Clone the repository
 
 ```bash
 git clone https://github.com/your-username/staysphere.git
 cd staysphere
+```
 
-2️⃣ Install dependencies
+### 2️⃣ Install dependencies
 
+```bash
 npm install
+```
 
 ### 3️⃣ Configure Environment Variables
 
 Create a .env file in the root directory:
 
+```bash
 ATLASDB_URL=your_mongodb_connection_url
 CLOUD_NAME=your_cloudinary_name
 CLOUD_API_KEY=your_cloudinary_key
 CLOUD_API_SECRET=your_cloudinary_secret
 SECRET=your_session_secret
+```
 
 ### 4️⃣ Run the app
 
+```bash
 npm start
-
+```
 ---
 
-🤝 Contributing
+## 🤝 Contributing
 
 Got ideas or found a bug?
     1. Fork this repo
     2. Create a new branch
     3. Submit a Pull Request
 
-🙌 Acknowledgements
-    Inspired by travel platforms like Airbnb
-    Uses concepts learned from online full-stack courses
-    Express & MongoDB documentation
+## 🙌 Acknowledgements
+
+Inspired by travel platforms like Airbnb
+Uses concepts learned from online full-stack courses
+Express & MongoDB documentation
