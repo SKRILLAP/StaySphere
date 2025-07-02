@@ -35,8 +35,6 @@ Create, explore, and review vacation listings with full-stack power and a sleek 
 ---
 
 ## 📁 Project Structure
-
-```bash
 StaySphere/
 ├── app.js                  # Main Express app setup
 ├── cloudConfig.js          # Cloudinary configuration
