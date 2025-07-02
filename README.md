@@ -121,12 +121,12 @@ npm start
 ## 🤝 Contributing
 
 Got ideas or found a bug?
--1. Fork this repo
--2. Create a new branch
--3. Submit a Pull Request
+1. Fork this repo.
+2. Create a new branch.
+3. Submit a Pull Request.
 
 ## 🙌 Acknowledgements
 
--Inspired by travel platforms like Airbnb
--Uses concepts learned from online full-stack courses
--Express & MongoDB documentation
+-Inspired by travel platforms like Airbnb.
+-Uses concepts learned from online full-stack courses.
+-Express & MongoDB documentation.
