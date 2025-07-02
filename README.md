@@ -36,18 +36,50 @@ Create, explore, and review vacation listings with full-stack power and a sleek 
 
 ## 📁 Project Structure
 
+```bash
 StaySphere/
-├── controllers/ # Route logic (Listings, Users, Reviews)
-├── models/ # Mongoose Schemas
-├── routes/ # RESTful API Routes
-├── views/ # EJS Templates
-├── public/ # Static assets (CSS, JS)
-├── utils/ # Error handler, async wrapper
-├── middleware.js # Custom middleware
-├── cloudConfig.js # Cloudinary config
-├── app.js # Main Express app
-├── init/ # Seeder scripts
-└── README.md
+├── app.js                  # Main Express app setup
+├── cloudConfig.js          # Cloudinary configuration
+├── middleware.js           # Custom middleware for auth & validation
+├── schema.js               # Joi validation schemas
+├── .env                    # Environment variables (not committed)
+│
+├── controllers/            # Route logic (controllers)
+│   ├── listings.js
+│   ├── reviews.js
+│   └── users.js
+│
+├── models/                 # Mongoose schemas
+│   ├── listing.js
+│   ├── review.js
+│   └── user.js
+│
+├── routes/                 # Route definitions
+│   ├── listing.js
+│   ├── review.js
+│   └── user.js
+│
+├── utils/                  # Utility files
+│   ├── ExpressError.js
+│   └── wrapAsync.js
+│
+├── init/                   # Database seeding
+│   ├── data.js
+│   └── index.js
+│
+├── public/                 # Static assets
+│   ├── css/
+│   └── js/
+│
+├── views/                  # EJS templates
+│   ├── includes/           # Reusable partials (nav, flash, footer)
+│   ├── layouts/            # Base layout using ejs-mate
+│   ├── listings/           # Listing views (index, show, edit, new)
+│   ├── users/              # Auth views (signup, login)
+│   ├── error.ejs
+│   └── home.ejs
+│
+└── README.md               # Project documentation
 
 
 ---
