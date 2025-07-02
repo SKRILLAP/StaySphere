@@ -127,6 +127,6 @@ Got ideas or found a bug?
 
 ## 🙌 Acknowledgements
 
--Inspired by travel platforms like Airbnb.
--Uses concepts learned from online full-stack courses.
--Express & MongoDB documentation.
+- Inspired by travel platforms like Airbnb.
+- Uses concepts learned from online full-stack courses.
+- Express & MongoDB documentation.
