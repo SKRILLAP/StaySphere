@@ -89,8 +89,8 @@ StaySphere/
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/staysphere.git
-cd staysphere
+git clone https://github.com/SKRILLAP/StaySphere.git
+cd StaySphere
 ```
 
 ### 2️⃣ Install dependencies
