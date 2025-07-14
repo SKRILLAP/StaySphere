@@ -114,7 +114,7 @@ SECRET=your_session_secret
 ### 4️⃣ Run the app
 
 ```bash
-npm start
+nodemon app.js
 ```
 ---
 
