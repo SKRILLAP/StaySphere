@@ -96,7 +96,7 @@ cd StaySphere
 ### 2️⃣ Install dependencies
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 
 ### 3️⃣ Configure Environment Variables
