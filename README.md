@@ -113,6 +113,11 @@ SECRET=your_session_secret
 
 ### 4️⃣ Run the app
 
+Install nodemon :)
+```bash
+npm install -g nodemon
+```
+Run the app
 ```bash
 nodemon app.js
 ```
