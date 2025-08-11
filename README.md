@@ -1,24 +1,24 @@
-# 🌍 StaySphere
+#  StaySphere
 
 > **StaySphere** — A global, inclusive travel platform.  
 Create, explore, and review vacation listings with full-stack power and a sleek interface.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🏠 **Listing Management**: Create, update, delete travel stays.
-- 🔒 **User Authentication**: Secure login/signup with session support.
-- ✍️ **Reviews & Ratings**: Leave feedback and rate stays.
-- 📸 **Cloud Image Uploads**: Integrated with **Cloudinary**.
-- 💬 **Flash Messaging**: Beautiful user prompts and notifications.
-- 🌐 **Dynamic Routing**: RESTful routes with full CRUD control.
-- 🎨 **Responsive Frontend**: Styled with custom CSS and EJS templates.
-- 🧠 **Clean MVC Architecture**: Scalable and maintainable codebase.
+-  **Listing Management**: Create, update, delete travel stays.
+-  **User Authentication**: Secure login/signup with session support.
+-  **Reviews & Ratings**: Leave feedback and rate stays.
+-  **Cloud Image Uploads**: Integrated with **Cloudinary**.
+-  **Flash Messaging**: Beautiful user prompts and notifications.
+-  **Dynamic Routing**: RESTful routes with full CRUD control.
+-  **Responsive Frontend**: Styled with custom CSS and EJS templates.
+-  **Clean MVC Architecture**: Scalable and maintainable codebase.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Tech              | Role                          |
 |-------------------|-------------------------------|
@@ -34,7 +34,7 @@ Create, explore, and review vacation listings with full-stack power and a sleek 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```bash
 StaySphere/
@@ -84,22 +84,22 @@ StaySphere/
 ```
 
 
-## 🔧 Setup Instructions
+##  Setup Instructions
 
-### 1️⃣ Clone the repository
+###  Clone the repository
 
 ```bash
 git clone https://github.com/SKRILLAP/StaySphere.git
 cd StaySphere
 ```
 
-### 2️⃣ Install dependencies
+###  Install dependencies
 
 ```bash
 npm install --legacy-peer-deps
 ```
 
-### 3️⃣ Configure Environment Variables
+###  Configure Environment Variables
 
 Create a .env file in the root directory:
 
@@ -111,7 +111,7 @@ CLOUD_API_SECRET=your_cloudinary_secret
 SECRET=your_session_secret
 ```
 
-### 4️⃣ Run the app
+###  Run the app
 
 Run the app
 ```bash
@@ -124,14 +124,14 @@ npm install -g nodemon
 ```
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Got ideas or found a bug?
 1. Fork this repo.
 2. Create a new branch.
 3. Submit a Pull Request.
 
-## 🙌 Acknowledgements
+##  Acknowledgements
 
 - Inspired by travel platforms like Airbnb.
 - Uses concepts learned from online full-stack courses.
