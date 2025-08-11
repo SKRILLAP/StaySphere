@@ -1,75 +1,396 @@
-/* General Styling */
 body {
-    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    background: linear-gradient(135deg, #022954 0%, #1e3a5f 50%, #2a5a88 100%);
+    overflow-x: hidden;
+}
+.container {
     display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+/* Animated background elements */
+.bg-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+.shape {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+.shape:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    top: 20%;
+    right: 10%;
+    animation-delay: 0s;
+}
+.shape:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    top: 60%;
+    right: 20%;
+    animation-delay: 2s;
+}
+.shape:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    top: 80%;
+    right: 5%;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+/* Left Side */
+.left-section {
+    width: 40%;
+    background: linear-gradient(45deg, #ffffff, #f8f9fa);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    box-shadow: 5px 0 20px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    gap: 2rem;
+}
+
+.main-heading {
+    font-size: 3.75rem;
+    margin: 0;
+    color: #022954;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.brand-subtext {
+    font-size: 1.1rem;
+    color: #505a74;
+    margin: 0;
+    line-height: 1.6;
+    max-width: 90%;
+    font-weight: 400;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    background: transparent;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(2, 41, 84, 0.05), transparent);
+    transform: rotate(45deg);
+    transition: transform 0.6s ease;
+}
+
+/* .logo-container:hover::before {
+    transform: rotate(45deg) translate(50%, 50%);
+}
+
+.logo-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+} */
+
+.logo-placeholder {
+    font-size: 4rem;
+    color: #022954;
+    z-index: 1;
+    animation: logoFade 3s ease-in-out infinite;
+}
+
+@keyframes logoFade {
+    0%, 100% { 
+        opacity: 0.7; 
+        transform: scale(1);
+    }
+    50% { 
+        opacity: 1; 
+        transform: scale(1.05);
+    }
+}
+
+/* Alternative logo styles - uncomment one if you want to use an actual logo */
+.logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    z-index: 1;
+    animation: logoFade 3s ease-in-out infinite;
+}
+
+.brand-tagline {
+    font-size: 1.3rem;
+    color: #354c7c;
+    margin: 0;
+    /* font-style: italic; */
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Right Side */
+.right-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #022954; /* Lightest theme color */
-    color: #505a74;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
-/* Home Container */
-.home-container {
+/* Hero content */
+.hero-content {
     text-align: center;
-    max-width: 600px;
-    padding: 3rem;
-    background-color: #ffffff;
-    border-radius: 1rem;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    color: white;
+    max-width: 500px;
 }
 
-/* Headings */
-.home-container h1 {
-    font-size: 2.5rem;
+.tagline {
+    font-size: 2rem;
     font-weight: 700;
-    color: #022954;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: fadeInUp 1s ease-out;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-.home-container p {
-    font-size: 1.2rem;
-    color: #505a74;
-    margin-bottom: 2rem;
+.subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+    line-height: 1.6;
+    animation: fadeInUp 1s ease-out 0.2s both;
+    font-weight: 400;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-/* Button Container */
-.btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+/* Feature highlights */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    max-width: 600px;
+    animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.feature {
+    text-align: center;
+    color: white;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.feature h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.feature p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
 }
 
 /* Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-out 0.6s both;
+    justify-content: center;
+    width: 100%;
+}
+
 .btn {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    font-weight: 600;
+    padding: 1rem 2rem;
     border-radius: 0.5rem;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-/* Button Colors */
-.explore {
-    background-color: #022954;
-    color: #eaebfe;
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
 }
 
-.signup {
-    background-color: #354c7c;
-    color: #eaebfe;
+.btn:hover::before {
+    left: 100%;
 }
 
-.login {
-    background-color: #b0b8ce;
-    color: #022954;
+.signup-btn {
+    background: linear-gradient(45deg, #022954, #1e3a5f);
+    color: white;
+    box-shadow: 0 8px 20px rgba(2, 41, 84, 0.4);
 }
 
-/* Hover Effects */
-.btn:hover {
-    transform: translateY(-3px);
-    opacity: 0.9;
+.signup-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(2, 41, 84, 0.6);
+}
+
+.login-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.login-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.explore-section {
+    text-align: center;
+    animation: fadeInUp 1s ease-out 0.8s both;
+}
+
+.explore-text {
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+}
+
+.explore-btn {
+    background: linear-gradient(45deg, #022954, #2a5a88);
+    color: white;
+    box-shadow: 0 8px 20px rgba(2, 41, 84, 0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.explore-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(2, 41, 84, 0.6);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .left-section, .right-section {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    .left-section {
+        min-height: 50vh;
+    }
+    .main-heading {
+        font-size: 2rem;
+    }
+    .logo-container {
+        max-width: 250px;
+        height: 150px;
+    }
+    .logo-placeholder {
+        font-size: 3rem;
+    }
+    .features {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .auth-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
 }
